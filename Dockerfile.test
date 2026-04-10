@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install GeckoDriver
-Try this and rebuild and see if it changes anything. I think there is a space that is causing the wget to fail:
 ENV GECKODRIVER_VERSION=v0.34.0
 RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz" -O /tmp/geckodriver.tar.gz \
 && tar -xzf /tmp/geckodriver.tar.gz -C /usr/local/bin \
