@@ -6,7 +6,7 @@ pipeline {
         DOCKER_IMAGE = 'cithit/blairc'                                                                    //<------change this
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/carlos-blair/225-lab3-6.git'                                          //<------change this
-        KUBECONFIG = credentials('blairc-225-sp26')                                                          //<------change this
+        KUBECONFIG = credentials('blairc-225')                                                          //<------change this
     }
 
     stages {
